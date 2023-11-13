@@ -1,0 +1,214 @@
+/*Así se definen los comentarios*/
+/* para llamar los id usamos # y nombre de id */
+#titulo {
+    color: tomato;
+}
+/* para llamar las clases usamos . y nombre de classe */
+.texto {
+    color: slateblue;
+}
+/* Dependiendo el orden en que yo coloque mi css el se va anteponer lo toma en cascada tomando el último tiene más prioridad que lo que hayamos colocado antes*/
+p.especial {
+    color: mediumseagreen;
+}
+/* A todas las etiquetas de p que contengan una clase de texto  */
+p.texto {
+    color: slateblue;
+}
+/* Todas las etique de p que se encuentren dentro de un div se les asigne un style */
+/* Todas las etiquetas div que contengan hijos de etiqueta p  (directos o indirectos) tengan el style*/
+div p {
+    color: aquamarine;
+}
+/* Todas las etiquetas div que contengan hijos de etiqueta h2  (directos o indirectos) tengan el style*/
+div h2 {
+    color: brown;
+}
+/* Seleccionar más de un elemento  y aplicarles el mismo style de css*/
+div h2, div h3 {
+    color: brown;
+}
+/* Me permite seleccionar todos los elemtos de nuestro HTML (selector universal)*/
+* {
+    font-size: 24px; /* para cambiar el tamaño de la letra*/
+    /* color: black;  No cambia el color ya que ya fue definida anteriormente solo aplica propiedades solo si no han sido definidas por otros selectores   */
+}
+/*Metodo de colores exagesicimal*/
+/* .color{
+    color: #ff0000;
+} */
+/*Formato RGB*/
+/* .color {
+    color: rgb(255, 0, 255);
+} */
+/* Para generar los bordes se deben colocar 3 valores tamaño color y estilo:
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset 
+    outset
+    none
+    hidden
+*/
+.color {
+    /* border: 5px black solid ; */
+    border-style: solid; /*con esta propiedad no es necesario definir ni color ni tamaño*/
+    border-color: blue;/*Para definir el color del borde*/
+    border-radius: 5px;/* Para darle un borde redondeado */
+    border-width: 5px; /*Para definir el ancho de mi borde */
+}
+/* Unidades de medida, 1px es la unidad minima que puedo usar para mostrar algo, se pueden unsar otras unidades pero eso depende del dispositvo. Todo lo que yo haga es subjetivo dependiendo el dispositivo donde yo lo vea
+    1cm; centimetro
+    5mm; milimetros
+    1in; pulgadas
+    5pt; 1/72 de pulgada
+    1pc; picas = 12 puntos
+
+Son medidas absolutas que no van a cambiar, no son recomendables porque tenemos distintos dispositivos y van a mostrar esto diferente.
+Es mejor usar unidades relativas, se toma d ebase de un elemento y a partir de ahí se calcula el tamaño que va a tener nuestro elemento
+    2em; dos veces el tamaño de la funte que se esta usando actualmente em es relativo al tamaño de la fuente que tiene ese elemento
+    2rem; es relativo al tamaño de la fuente raiz html
+*/
+#fondo{
+    background-color: rgba(255, 0, 0);/*Este es para usar transparencia o intensidad)*/
+    /*le da opacidad al elemento completo y no solo al fondo*/
+    height: 300px;
+    /* background-image: url('../images/first_image.jpg'); para agregar imagenes de fondo */
+    /* background-repeat: repeat-y; /*para no repetir la imagen*/
+    /* background-position: center top; */ 
+    background : #f00 url('../images/first_image.jpg') repeat-y center bottom / 100px 100px; 
+    /* background-size: 100px 100PX; Redimencionar la imagen que pongamos de fondo */
+}
+/*Se usa margin, padding con los valores 1.top(arriba) 2.right(derecha) bottom(abajo) 4.left(Izquierda) puede usar tambien un valor unico y se uza para todos con dos valores toma los valores 1.Vertical (top, button) y 2.Horizontal (right, left) con tres valores seria 1.top 2.horizontal 3.botton*/
+.margen {
+    background-color: chocolate;
+    margin: 15px 30px;
+    padding: 30px 15px 5px; /*Genera espacios dentro del elemneto*/
+    border: solid 3px black; /*en medio del padding y del margin*/
+    height: 100px;
+    width: 50px;
+    /* overflow: hidden; El contenido que no quepa en el contenedor lo oculta */
+    overflow: scroll;/*para crear un scroolll para que se vea todo*/
+    outline: 1px solid red; /*Es un borde que se coloca antes del margin*/
+
+}
+/*BOX MODEL: Es como se posiciona cada elemento  HTML en nuestro documento, todo etiqueta HTML va a tener margin, borde, padding, contenido. width solo es para el tamaño del contenido, si queiro saber el tamaño de todo el elemento tengo que sumar todo y lo mismo pasa con height*/
+.text{
+    font-family: 'Roboto', sans-serif;/*Para cambiar el styl de fuente escojo la fuente y si no carga podemos colocar sans-serif*/
+    /*Pa crear fuentes customisadas vamos a google fonts se agrega y se coloca en el indext.html*/ 
+    text-align: justify; /*nos sirve para saber en donde queremos dejar el texto"*/
+    text-decoration: overline; /*para darle decoración a los textos*/
+    text-shadow: 3px 5px 5px blue ; /*1. cuanto se mueve a la derecha 2.cuanto se mueve hacia abajo 3. determina el difuminado 4.color*/
+}
+
+/*Los link tienen 4 estados cuando ya fue visitado cunado no ha sido viditido y cuando pasamos por encima de el y cuando este este activo*/
+a:link { /*Cuando el link no sido visitado*/
+  color: blueviolet;  
+}
+
+a:visited{  /*Cuando el link ha sido visitado*/
+    color: gray;
+}
+
+a:hover{ /*El selector de estado hover es cuando estoy pasando por encima*/
+    color: yellow;
+}
+
+a:active{ /*El selector de estado active es cuando estoy pinchando el link*/
+    color: red;
+}
+
+/*Para tener una convinación de las acciones de link debo utilizarlos en el orden en que estan anteriormen y los puedo convinar como quiera*/
+
+ul{
+    background-color: cyan;
+    list-style-type: circle;
+    /* padding-left: 0; */
+    /* list-style-position: inside ; */
+}   
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid 1px gray;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span{
+    display: block; /*Me coloca los elementos en bloque con salto de linea*/
+    /*display: none;*/ /*Sirve para ocultar los elmentos*/
+    /*visibility: hidden;*/ /*es otra opción para ocultar*/
+    max-width: 300px; /*Sirve para asignar un ancho maximo a nuestros elementos, se diferencia de width le asigna ese ancho como maximo*/
+    background-color: red;
+}
+
+.inline{
+    display: inline; /*Me coloca los elementos uno al lado de otro*/
+}
+
+#position{
+    position: sticky;/*Static es valor por defecto que traen todos los elementos de HTML, relative es una posición relativa a donde deveria estar posicionada este elemnto, el valor fixed le indica que debe tener una posición pero con respecto a lo que estamos viendo en el explorador para que se mueva durante el scroll, con position absolud lo que ocurre es que este se va posicionar relativo con el elemto padre mas cercano, stickyentrega una mezcla entre relative y fixed, debe usarse los indicadores para posicionarlo usar boton wsp ejemplo*/
+    left: 20px;/*´para indicarle cuanto quiero que se mueva con respecto a la indicación*/
+    top: 25px;
+}
+
+.left{
+    float: left;
+    width: 200px;
+    height: 200px ;
+}
+
+.right {
+    float: right;
+}
+
+.container{
+    height: 200px;
+}
+
+.column {
+    /* border: solid 1px #ddd;
+    border-radius: 5px; */
+    margin: 0;
+    padding: 10px 0px;
+    width: 30%;
+    text-align: center;
+}
+
+.inline-block{
+    display: inline-block;/*Para poder agregar valores de altura y ancho*/
+    height: 55px;
+    background-color: rebeccapurple;
+}
+
+.center{
+    padding: 50px 0; /*Asi me centra el elemento la primera es vertical*/
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+}
+
+
+
