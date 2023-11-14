@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action=""> <!--La Etiqueta <form> nos sirve para inicializar los formularios; y estos nos ayudar a capturar los datos de nuestros clientes en nuestras paáginas Web.-->
+        <fieldset><!--Esta etiqueta lo que hace es agrupar todas las etiquetas del formulario en una caja para poder agrupar los input y saber que estos pertenecen a los datos personales o datos extras de nuestros usuarios-->   
+            <legend>Datos personales</legend> <!--Nos permite entregar un texto caracteristico a <fieldset> arriba para que los campos que agrupamos tengan maás interacción y podamos indicarle a los usuarios para que son los capos que el va a ingresar-->    
+            <label for="">Edad</label> <!--Lo que hara es darle una etiqueta a la etiqueta <input>-->
+            <input type="text" placeholder="Ingresa edad..."> <br><!--la etiqueta <input> nos muestra unos cuadros tipo campos para que escriban. la propieda type="" sirve para numeros,email, text, password, submit. Placeholder nos muestra dentro del input un texto guía de lo que el usuario debe colocar en ese campo-->
+            <label for="">Email</label>
+            <input type="email"> <br><!--Para ingresar números acepta la letra e porque es un exponecial matematico-->
+            <label for="">Contraseña</label>
+            <input type="password"><br> <!--Sirve para ingresar contraseña y cambia las parametros por puntos-->
+            <label for="">Nombre</label> 
+            <input type="text"> <br><!--Para ingrsar textos de tipo strig-->
+            <input type="submit"><br> <!--Sirve para generar un botón para enviar la información si queremos cambiar el valor texto en el botón debemos usar la propieda value="Aceptar"-->
+            <textarea name="" id="" cols="30" rows="10"></textarea> <!--Es un área de texto que puede ser redireccionado para que los usuarios puedan escribir mucho más texto la propiedad cols y row nos da el tamaño del cuadro de texto-->
+            <button>Aceptar</button> <!--funciona igual que <input typr="submit", con la diferencia que podemos colocar el nombre al botón, puede agregar iconos y mas cosas en la etiqueta HTMl-->
+            <select name="" id=""> <!--Esta etiqueta lo que va hacer es que nos va a mostra opciones que nosotros vamos a poder seleccionar y para esto debemos usar dentro de <select> la etiqueta <option>-->
+                <option value="goku">Goku</option> <!--Esta etiqueta nos mostrara la lista desplegable y le mostrara al usuario lo que este dentro de la etiqueta HTML (Goku) y el parametro value es el valor que nos dara cuando mandemos a guarda y enviar las respuestas de los usuarios (goku)-->
+                <option value="vegeta">Vegeta</option>
+                <option value="johan">Johan</option>
+            </select>
+        </fieldset> 
+
+
+    </form>
+</body>
+</html>
