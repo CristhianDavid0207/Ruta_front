@@ -6,9 +6,9 @@
     <title>Formularios</title>
 </head>
 <body>
-    <form action=""> <!--La Etiqueta <form> nos sirve para inicializar los formularios; y estos nos ayudar a capturar los datos de nuestros clientes en nuestras paáginas Web.-->
-        <fieldset><!--Esta etiqueta lo que hace es agrupar todas las etiquetas del formulario en una caja para poder agrupar los input y saber que estos pertenecen a los datos personales o datos extras de nuestros usuarios-->   
-            <legend>Datos personales</legend> <!--Nos permite entregar un texto caracteristico a <fieldset> arriba para que los campos que agrupamos tengan maás interacción y podamos indicarle a los usuarios para que son los capos que el va a ingresar-->    
+    <fieldset><!--Esta etiqueta lo que hace es agrupar todas las etiquetas del formulario en una caja para poder agrupar los input y saber que estos pertenecen a los datos personales o datos extras de nuestros usuarios-->  
+        <legend>Datos personales</legend> <!--Nos permite entregar un texto caracteristico a <fieldset> arriba para que los campos que agrupamos tengan maás interacción y podamos indicarle a los usuarios para que son los capos que el va a ingresar--> 
+        <form action=""> <!--La Etiqueta <form> nos sirve para inicializar los formularios; y estos nos ayudar a capturar los datos de nuestros clientes en nuestras paáginas Web.-->
             <label for="">Edad</label> <!--Lo que hara es darle una etiqueta a la etiqueta <input>-->
             <input type="text" placeholder="Ingresa edad..."> <br><!--la etiqueta <input> nos muestra unos cuadros tipo campos para que escriban. la propieda type="" sirve para numeros,email, text, password, submit. Placeholder nos muestra dentro del input un texto guía de lo que el usuario debe colocar en ese campo-->
             <label for="">Email</label>
@@ -25,9 +25,7 @@
                 <option value="vegeta">Vegeta</option>
                 <option value="johan">Johan</option>
             </select>
-        </fieldset> 
-
-
-    </form>
+        </form>
+    </fieldset> 
 </body>
 </html>
