@@ -1,0 +1,17 @@
+/*Selectores: Son una instrucción que nosotros podemos usar para utilizar las etiquetas de HTMl para los selectores de las etiquetas es la misma etiqueta*/
+
+body {
+    background-color: #efefef; /*Para cambiar el color de fonde*/
+    color: #000; /* Para cambiar el color de los textos. Los valores que nosotros debemos entregarle es en formato exxfesima */
+}
+
+/* Tipos de selectores mensionamos la etiqueta html que queremos aplicarle el stilo. ID nos ayuda a identificar un elemento de HTML único y las clase nos permiten hacer  una composición de estilod a un elemneto de HTML o si quiero compartir estilos a diferentes elementos o etiquetas de html*/
+
+#paragraph { /*El # es para seleccionar un id de una etequita de html*/
+    color: #ff0000;
+}
+
+.label { /*El . es para seleccionar una clase de una etequita de html*/
+    color: #00aa00;
+}
+
