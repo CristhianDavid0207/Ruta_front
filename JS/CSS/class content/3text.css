@@ -10,13 +10,13 @@ p {
     word-spacing: 10px;  /*Genera separaciones entre cada una de las palabras para dar un poco de aire a nuestro texto*/  
     text-shadow: 5px 2px 5px rgb(0, 0, 0, 0.3); /*es para agregar sombreados a los textos, lo primero que se indica son los pixeles para que se desplace la sombre a la derecha, el segundo que tanto se dexplaza para abajo, la tercera es para saber el difuminado, y por ultimo el color, se recomienda uzarlos en rgba para crear transparencia*/
     font-family: 'Times New Roman' ; /*Esto para cambiar el tipo de letra*/
-    font-style: oblique;/*Esto para indicar el estilo de la fuente cursiva, negrilla etc*/
+    font-style: italic;/*Esto para indicar el estilo de la fuente cursiva, negrilla etc*/
     font-size: 1.5em ; /*Para cambiar el tamaño de la fuente es mejor usar em, por el usuario puede configurar la fuente*/
     font-weight: 600; /*Para el ancho de las fuentes se debe incrementar de 100 en 100*/
 }
 
 a {
-    text-decoration: noene; /*Nos permite agregar decoraciones en nuestro HTML, para quitar el subrayado en un <a> y colocando none nos quita el subrayado del link, otra propiedad puede ser la de overline que nos coloca una línea en la parte superior del texto. Line-through nos tacha el texto una línea en el medio. Y la propiedad underline nos pone la línea en la parte inferior en cualquier parrafo o texto que desee, es mejor hacerlo en html para resaltar.*/
+    text-decoration: none; /*Nos permite agregar decoraciones en nuestro HTML, para quitar el subrayado en un <a> y colocando none nos quita el subrayado del link, otra propiedad puede ser la de overline que nos coloca una línea en la parte superior del texto. Line-through nos tacha el texto una línea en el medio. Y la propiedad underline nos pone la línea en la parte inferior en cualquier parrafo o texto que desee, es mejor hacerlo en html para resaltar.*/
     text-transform: uppercase; /*Podemos tomar nuestro texto y ponerlo todoe en mayuscula o en miniscula o en capital (Lowercast"minusculas", capitallize "Mayuscula al inicio", uppercase "Coloca todo en mayuscula") */
     letter-spacing: 5px ; /*Genera separaciones entre cada una de las letras para dar un poco de aire a nuestro texto*/
 }
