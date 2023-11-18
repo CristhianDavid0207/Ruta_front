@@ -1,0 +1,20 @@
+body{
+    background-color: #eee; /*Los colores exadecimales también se pueden escribir con 3 valores*/
+}
+
+/*Todos nuestros elementos de html cuando los modelamos los pensamos como si estos fueran unas cajas, estas cajas van a tener margin exterior el cual podemos modificar con la propiedad de margin usando unidades de medidas,  el margen superior lo que permite es separar el contenido de nuetsra caja de la caja de mas arriba. Padding nos permie llevar nuestro contenido más al centro o separarlo de nuestros bordes. Los bordes nos permiten generar una separación entre el padding y el margen.*/
+
+.caja{
+    margin: 8px; /*px Son una unidad de medida de los monitores*/
+    /*Lo que hace la propiedad de margin es generar una separación entre el contenido de nuestra caja de la caja superior (padre) generando una diferencia entre ambos. Esto es importante ya que nos mustra de que la caja esta separada de del padre ya que tiene un margen que va estar por fuera entre el contenido y caja padre */
+    padding: 8px; /*Padding el contenido de caja crece tiene una sutil diferencia con margin. Margin bordea el contenido por fuera, y padding lo hace por dentro de la caja.*/
+    border-style: solid;/*Se encuentra en medio de el margin y el padding*/
+    border-width: 8px;
+    border-color: #faa;
+    border-left: 6px solid #afa ; /*Si declaramos una propiedad que ya usamos el navegador toma la última*/
+    border-radius: 3px; /*Simula un circulo con radio, y pone las esquinas redondeadas*/
+    background-color: #aaf;
+    height: 100px; /*Asi le indico una altura fija que quiero que tenga mi caja*/
+    width: 100px; /*Asi le indico un ancgo fija que quiero que tenga mi caja*/
+    color: #5757 ; /*Para cambiar el color de la letra*/    
+}

@@ -1,0 +1,31 @@
+body {
+    background-color: #ddd;
+}
+
+#box1 {
+    background-color: #fff;
+    border: solid 1px #bbb;
+    border-top: 0px;
+    border-radius: 7px;
+}
+
+.box2 {
+    padding: 10px;
+    border-top: solid 1px #eee;
+}
+
+.button1{
+    color: #fff;
+    background-color: #da1;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button2{
+    color: #fff;
+    background-color: #aaa;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
