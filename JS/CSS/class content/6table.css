@@ -1,0 +1,25 @@
+body{
+    background-color: #eee;
+}
+
+table{
+    width: 100%;
+    background: #fff;
+    border-collapse:collapse ; /*Para quitar los espacios que se generan entre celdas en las tablas*/
+}
+
+tr:nth-child(even){ /*Esto lo que hace es seleccionar cierto tipo de hijos y odd seleccionas las pares*/
+    background-color: #f2f2f2;
+}
+
+td {
+    border: solid 1px #ddd;
+    padding: 5px;
+}
+
+tr > th {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: left ;
+    padding: 12px 8px;
+}
