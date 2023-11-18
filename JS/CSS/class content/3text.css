@@ -16,7 +16,7 @@ p {
 }
 
 a {
-    text-decoration: noene; /*Nos permite agregar decoraciones en nuestro HTML, para quitar el subrayado en un <a> y colocando none nos quita el subrayado del link, otra propiedad puede ser la de overline que nos coloca una línea en la parte superior del texto. Line-through nos tacha el texto una línea en el medio. Y la propiedad underline nos pone la línea en la parte inferior en cualquier parrafo o texto que desee, es mejor hacerlo en html para resaltar.*/
+    text-decoration: none; /*Nos permite agregar decoraciones en nuestro HTML, para quitar el subrayado en un <a> y colocando none nos quita el subrayado del link, otra propiedad puede ser la de overline que nos coloca una línea en la parte superior del texto. Line-through nos tacha el texto una línea en el medio. Y la propiedad underline nos pone la línea en la parte inferior en cualquier parrafo o texto que desee, es mejor hacerlo en html para resaltar.*/
     text-transform: uppercase; /*Podemos tomar nuestro texto y ponerlo todoe en mayuscula o en miniscula o en capital (Lowercast"minusculas", capitallize "Mayuscula al inicio", uppercase "Coloca todo en mayuscula") */
     letter-spacing: 5px ; /*Genera separaciones entre cada una de las letras para dar un poco de aire a nuestro texto*/
 }
