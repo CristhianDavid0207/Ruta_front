@@ -1,0 +1,48 @@
+/*La propiedad de display indica como vamos a visual el elemento html en pantalla, hasta ahora nosotros podemos ver la propiedad de block (se ven en bloqueo propiedad inline(colocar los elementos uno al lado del otro)*/
+
+body {
+    background-color: #eee;
+}
+
+/* #invisible {
+    display: none; /*Esta propiedad sirve para hacer los elementos onvisibles
+}
+
+span, img {
+    display: block;
+} */
+
+#float {
+
+}
+
+img {
+    float: right; /*Esta propiedad con sus valores coloca los elementos donde determinemos y lo que este debajo al lado contrario*/ 
+}
+
+img:hover {
+    opacity: 0.7; /*Recibe valores del 0 al 1*/
+}
+
+div p {
+    color: #f00;
+}
+
+
+
+
+#max {
+    max-width: 350px; /*Es el ancho maximo del elemento*/
+    text-align: justify;
+    background-color: #f00;
+    margin: auto; /*Esto nos permite centrar los elemento siempre y cuando sean de display block*/
+    position: relative; /*Por defecto todos los elementos de HTML vienen con la propiedad de Static por lo que se van a quedar en el lugar donde lo hayamos definido. Relative indica que el elemento va a tener una nueva posición pero con respecto donde se encuentra el mismo, la propiedad fixed lo que hace es que deja el continido fijo en la pantalla sin importar cuanto exista, se usa para los menu que se quedan pegados arriba o a la izquierda */
+    left: 15px;
+    top: 0px; /*Estos me ayudan a mover el elento con respecto a el mismo hacia arriba abajo, derecha o Izquierda y puedo usar numeros positivos o negativos*/
+}
+
+#over{
+    width: 100px;
+    height: 100px;
+    overflow-x: auto; /*Esta propiedad es para mantener el contenido dentro del tamaño del elemnto que definimos por defecto tra visible. hidden que lo que hace es que el contenido que se sale del contenedor no aparezca. scroll nos agrega un scroll del contenido. El valor de auto hace lo mismo que el scroll pero solo si lo necesita*/
+}

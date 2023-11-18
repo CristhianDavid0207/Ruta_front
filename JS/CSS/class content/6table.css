@@ -6,6 +6,8 @@ table{
     width: 100%;
     background: #fff;
     border-collapse:collapse ; /*Para quitar los espacios que se generan entre celdas en las tablas*/
+    border: solid 1px #aaa;
+    border-top: 0px ;
 }
 
 tr:nth-child(even){ /*Esto lo que hace es seleccionar cierto tipo de hijos y odd seleccionas las pares*/
