@@ -12,9 +12,6 @@ span, img {
     display: block;
 } */
 
-#float {
-
-}
 
 img {
     float: right; /*Esta propiedad con sus valores coloca los elementos donde determinemos y lo que este debajo al lado contrario*/ 
@@ -27,8 +24,6 @@ img:hover {
 div p {
     color: #f00;
 }
-
-
 
 
 #max {
