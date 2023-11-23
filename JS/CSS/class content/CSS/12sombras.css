@@ -1,0 +1,16 @@
+/*Efectos de sombras podemos dar estos a elementos de caja de HTML o textos dependiendo de la sintaxis que vayamos a utilizar*/
+
+body {
+    background-color: #eee;
+}
+
+.box {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset; /*El primer parametro lo que hace es desplazar la sombra hacia abajo y el segundo lo que hace el desplazarla a la derecha y siempre esta detras del elemento El tercer parametro determina que tanto es borrosa la sombra, la sombra se estira y empieza aparecer por izquieda y sobre el elemento para que se esparza, dando la senzación de que el elemento parezca levantado, el cuarto elemento determina el color, inset pone la sombra por dentro dando la sensación que el elemento esta por dentro*/
+}
+
+.text {
+    color: white;
+    text-shadow: 0px 1px 2px rgba(255, 0, 0, 0.9);
+    text-align: center;
+    font-size: 48px;
+}
