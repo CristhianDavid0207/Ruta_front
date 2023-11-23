@@ -1,0 +1,26 @@
+/*Transform nos permite tomar un elemento moverlo rotarlo escalarlo acostarlo o torcerlo*/
+
+body {
+    background-color: #eee;
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    /*La propiedad Transform se la apliquemos a un elemento con display bloc porque si no tendra efecto*/
+    /*Se debe usar con grados dentro de los parentesis, podemos generar figuras geometricas y se pueden usar grados negativos, la propieded de translate ()*se le agregan dos valores el el primero es donde quiero que se mueva en el eje x y el segundo en el eje y Scale nos permite cambiar las dimenciones de los elementos y recibe dos argumento para definir el alto y el ancho La propiedad Skew significa retorcer, y se le da el valor en grados da la sensación de que se acuesta Esto es para 2D*/
+    /*transform: rotateZ(20deg); /*Esto es para moverse en tercera dimensión*/
+    transition: 0.3s 0.5s; /*Transition recibe dos valores, la primera es la propiedad que queremos que tenga la transición seguido del tiempo que queremos que dure la transición*/
+}
+
+.box:hover{
+    /*width: 105px; /*Para hacer enfasis o menus laterales*/
+    transform: Scale(1.05, 1.05); /*Este sirve para dar la sensación que el elemento crece*/
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
