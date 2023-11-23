@@ -1,0 +1,27 @@
+body{
+    background-color: #eee;
+}
+
+/* .fondo {
+    height: 300px;
+    background-color: green;
+    background-image: url('http://placekitten.com/200/300'); /*Para colocar una imagen de fondo*/
+    /* background-repeat: no-repeat; /*Para que no se me repita la imagen o uso repeat-y o reapeat-x/
+    background-position: center ; /*Para indicar donde quiero que impiece la imagen/
+    background-attachment: fixed; /*Esto es para que la imagen de fondo se mantenga cuando hacemos scroll/
+    background-size: cover ;/*Para que la imagen se adecue al tamaño completo de una forma natural /
+
+} */
+
+/* .fondo {
+    background: green url('http://placekitten.com/200/300') no-repeat left top fixed cover; /*Esto es lo mismo que lo anterior solo que se puede colocar en una sola línea
+} */
+
+/* .fondo  {
+    /* background-color: rgba(0, 0, 0, 0.1); 
+    background-color: hsl(120, 60%, 70%, 0.9);
+} */
+
+.fondo {
+    background-image: repeating-linear-gradient(-15deg, red 20%, blue, violet, tomato, green, rgba(255, 0, 255, 1)50%, yellow ); /*para colocar colores gradientes, 1.indicar la rirección. 2.primer color 3.segundo color*/
+}
