@@ -1,0 +1,43 @@
+body {
+    background-color: #eee;
+}
+
+.box {
+    position: relative;
+    left: 20px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: 0.6s 0.3s;
+}
+
+.r {
+    border-left: solid 3px rgb(255, 0, 0);      
+}
+
+.r:hover{
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
+}
+
+.g {  
+    border-left: solid 3px rgb(0, 255, 0);
+}
+
+.g:hover{
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.b {
+    border-left: solid 3px rgb(0, 0, 255);
+}
+
+.b:hover{
+    background-color: #bbdefb;
+    cursor: pointer;
+}
