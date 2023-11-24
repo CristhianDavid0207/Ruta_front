@@ -1,0 +1,49 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #eee;
+    margin: 0px;
+    height: 100%;
+}
+/* 
+.grid, .contenedor {
+    display: grid;
+    grid-template-areas:    "Header Header"
+                            "Content Sidebar"
+                            "Footer Footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px ;
+    grid-auto-rows: 140px; /*Todas las columnas no implicitas tendran este tamaño
+    grid-auto-flows: row; /*Este me da la dirección del contenido
+    justify-items: tretch; /*Para mover los elementos dentro de nuestra grilla stretch hace que use todo el contenido ancho y largo
+    align-items: stretch;
+} */
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 5px;
+    justify-content: start;
+    align-content: space-evenly;
+} 
+
+
+
+/* .contenedor {
+    background-color: green;
+} */
+
+.r {
+    background-color: red;
+}
+
+
+/* .item-1 {
+    justify-self: center; /*Para mover un solo item
+    align-self: center;
+} */
