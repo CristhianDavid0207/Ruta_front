@@ -1,0 +1,34 @@
+/*CSS GRID: Es un sistema que se implementa en CSS3 para poder entregarle una distribución a nuestro contenido para distribuir nuestro contenido que sea más facil y sencillo. Son un sistema de celdas que nos permite distribuir el contenido como si fuera una tabla. Y nos permite alocar el contenido lo podemos distribuir en columnas y filas. Usando instrucciones para cambial alto ancho posicion de los elementos y asignarle alturas o anchos predefinidos y que este se vaya repitiendo */
+
+body {
+    background-color: #eee;
+}
+
+.grid {
+    display: grid ;
+    /*grid-template-rows: 50px 100px ; 
+    /*Como colocar de una manera explicita dimenciones a nuestros elementos. En este caso como tenemos tres elementos 8gillas dentro de nuestro div contenedos el primer valor da la altura entre A y B y la segunda entre B y C  Debemos darle altura a todas las filas si no toma valores automaticos*/
+    /*grid-template-columns: 1fr 2fr 3fr; 
+    /*Se usa igual que rows y esto define el numero de las columnas tambien se puede usar valores en fracciones y determina el numero de fracciones que puede usar el total del ancho, o rem o %*/
+    /*Asignación de tamaño maximo y minimo con respecto al ancho del padre*/
+    /* grid-template-rows: minmax(100px, auto);
+    grid-template-columns: minmax(auto, 50%) 1fr 3em; */
+    /*Asignación de ancho y alto de manera indefinida para las filas y columnas y como usarlas en intermedio*/
+    grid-template-rows: repeat(2, 50px); /*Acepta dos argumentos, el primero es cuantas veces quiero yo repetir el valor que asigno en mi segundo argumento */
+    grid-template-columns: 30px repeat(3, 1fr) 15px;
+    /*brechas entre elementos*/
+    /* grid-row-gap: 20px;
+    grid-column-gap: 10px; */
+    grid-gap: 20px 10px; /*El primer termino es para las filas el segundo para las columnas y acepta medidas en px o en em y si usamos un solo valor nos toma tanto las columnas como las filas*/  
+}
+
+.element {
+    background-color: #900;
+}
+
+    /*Expandir elementos en Grid: las propiedades que vamos a usar no se la podemos aplicar al padre si no que se la debemos aplicar a los elemento en especifico. Se pueden definir nombre a las filas y las columnas de los grid*/  
+.hader{
+    grid-column:1/6; /*Recive el valor de la linea donde quiero que esta comience para hacer la forma corta lo usamos sin star y sin end y colocamos como notación un / */
+    grid-row: 1/3;
+}
+
