@@ -1,0 +1,10 @@
+FLEX BOX
+Esta pensado en manejar una sola columna y una única fila, en una sola dimención.
+Elemento Flex Box
+- Eje principal
+- Eje cruzado
+- main start / main end
+- cross start / cross end
+- Ancho principal / alto principal
+- Flex-Conteiner
+- Items

@@ -1,0 +1,34 @@
+body {
+    background-color: #eee;
+}
+
+.flex {
+    height: 100%;
+    display: flex; /*Pasa de estar en bloke a estar en in line*/
+    /*flex-direction: row; /*Le da orientación a los elementos
+    flex-wrap: wrap-reverse; /*Para que el el contenido no se salga del contenedor*/
+    flex-flow: row wrap ; /*Esta propiedad me resume las dos anteriores*/
+    /*justify-content: space-evenly ; /*Alinear el contenido*/
+    /*align-items: stretch; /*Para alinear bien */
+    height: 200px;
+    /* align-content: space-evenly ; */
+}
+
+.primero{
+    /*order: 1; /*Para cambiar el orden de los elementos*/
+    /*flex-grow: 1; /*Les permite crecer de manera dinamicaa los elementos en cuanto haya espacio disponible, por defecto es ceo a menos que lo cambiemos Determina las proporciones*/
+    /*flex-basis: 120px;/*Se utiliza para dar un tamaño inicial al elemento el cual sera utilizado en conjunto con flex-grow para distribuir el contenido en todo el contenedor*/
+    flex: 1 120px;/*Esta propiedad combina las dos anteriores*/
+    align-self: flex-start;
+}
+
+
+.segundo { 
+    flex-grow: 2;
+    align-self: baseline;
+}
+
+.tercero {
+    flex-grow: 3;
+    align-self: auto;
+}
