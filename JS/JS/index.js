@@ -171,3 +171,82 @@ console.log(resultadoOr2)
 
 
 
+//CONTROL DE FLUJO!
+//Nos permite a nosotros poder realizar iteraciones o evaluar condiciones. Podemos evaluar una condición de true o de false y  si esta tiene el valor de True aplicar lógica de lo contrario si ess false esta nos podemos saltar la lógica.
+
+//Control de Flujo: if
+//Evalua lo que hay dentro del parentesis y si esta evalua en true ya evalua lo que hay dentro de las llaves de lo contrario lo salta.
+
+if (false) {
+    console.log('Estoy dentro de un if!');
+}
+
+const edad = 5
+if (edad > 5 && edad < 18) {
+    console.log('El niño puede jugar');
+} else { // sino se cumple la condición del if ejecute el else
+    console.log('El niño no puede jugar :(');
+}
+
+//Control de Flujo: While
+//Es una instrucción que se va a quedar iterando infinitamente hats que nosotros le indiquemos algo. Evalua el parentesis y mientras sea True seguira corriendo hasta que llegue a algun false. 
+
+let x = 0
+while (x < 5) {
+    console.log(x)
+    x++ //Incrementa su valor hasta que llegue al valor de false
+}
+
+let y = true
+while (y) {
+    console.log(x, 'Corrio 1 vez')
+    y= false //Corre una vez y al cambiar el valor de y sale del while
+}
+
+console.log('Terminando el loop')
+
+//Si el while evalua en el parentesis true ejecuta las llaves y cuando evalua false sale de la llave.
+
+
+//Control de flujo: Switch
+//Nos permite ejecutar una instrucción u otra instrucción. y dentro de las llaves se empiezan asignar los casos que queremos que el evalue. Y para terminar el ultimo caso siempre dentro de Switch es default que es el caso que se ejecutaria si no es ningun caso asignado.
+
+let z = 2
+
+switch (z) {
+    case 1: 
+        console.log('Yo soy el caso 1');
+        break; //Indica que la ejecucion debe terminar en ese caso.
+        
+    case 2: 
+        console.log('Emmanuel Moreno');
+        break;
+        
+    case 3:
+        console.log('Cristhian David');
+        break;
+            
+    default:
+        console.log('Salir del programa');
+        break;
+}
+
+
+//Control de flujo: For
+//Nos permite iterar o encontrarnos dentro de un loop hasta que se cumpla una condición. en el () se le indica las intrucciones que debe de seguir for. Se le deben indicar 3 intrucciones 1.Valor inicial de la variable que vamos a iterar, 2. La condición que se debe cumplir para que el loop se pueda seguir iterando. 3. Operacion que quiero que se realice una vez que termine nuestro loop. Nos permite iterrar sobre nuestros arreglos
+
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+
+//Accediendo a los elementos de un arreglo con for
+
+const numeros = [1, 2, 'Hola', 4, 5]
+//Todos los arreglos que definimos en JS van a tener una propiedad llamada length que nos permite optener el largo de un array. Esto es muy importante para poder acceder a los indices de estos arreglos. Los indices empiezan desde cero.
+//console.log(numeros[2]) Para acceder a los elementos de nuestros arreglos
+
+for (let j = 0; j < numeros.length; j++) { //Tenemos que indicar que j debe ser menor al largo que nuestro arreglo teniendo en cuenta los indices y asu¿i lo que nos imprime son los indices de nuestros elementos
+    console.log(j)
+    console.log(numeros[j]) //Nos imprime todos los elementos dentro de nuestra array
+}
+
