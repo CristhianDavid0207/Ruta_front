@@ -85,10 +85,88 @@ arrVacio.push(miPrimeraVariable)
 
 console.log(arrVacio)
 
+//OPERADORES 
+//Para los operadores solo usaremos los tipos de datos: String, Number, Boolean, objetos y arreglos.
+
+//OPERACIONES MATEMATICAS
+const suma = 1 + 2 //Suma +
+const resta = 1 - 2 //Resta -
+const multiplicar = 3 * 2 //multiplicación *
+const dividir = 9 /3  //División /
+
+console.log(suma, resta, multiplicar, dividir)
+
+const modulo = 10 % 3  //Modulo % divide los valores que se asignen pero nos va a retornar nos el valor que sobra 10/3 =3 3*3 9 para 10 falta 1
+
+console.log(modulo)
+
+//Valores de incremento o de decremento
+
+let num = 5
+//Const no nos deja cambiar le valor de las variables
+num++ //Para incrementar de uno en uno nuestra variable
+num++
+num++
+num++
+num++
+num-- //Para decrementar de uno en uno nuestra variable
+num-- 
+num-- 
+num-- 
+num-- 
+console.log(num)
+
+//Operadores de asignación
+//Nos permite poder realizar una operación matematica en el numero que hemos definido y cambiar inmediatamente su valor.
+num += 5 //Asi incrementa en la cantidad que yo le asigne
+num -= 5 //Asi decrementa en la cantidad que yo le asigne
+num *= 5 //Asi decrementa en la cantidad que yo le asigne
+num /= 2 //Asi decrementa en la cantidad que yo le asigne
+
+console.log(num)
+
+//Operadores de Comparación
+//Nos permiten hacer comparaciones entre nuestros distintos tipos de datos, hacen mas sentido cuando estamos viendo en control de flujo, para saber que decision tomar en nuestro flujo de aplicaciones. Los operados de comparación siempre nos van a devolver Boolean
 
 
+const resultado1 = 5 === 6 //Igual estricto
+const resultado2 = 5 == '5' //No es un igual extricto, compara un numero con el contenido dentro de un String, compara diferentes tipos de valores.
+
+const resultado3 = 5 < 6 //Menor que
+const resultado4 = 5 > 6 //Mayor que
+
+const resultado5 = 5 <= 6 //Menor igual que
+const resultado6 = 5 >= 4  //Mayor igual que
+
+const resultado7 = 5 !== 6  //Desigualdad Extricta
+const resultado8 = 5 !== '5'  
+const resultado9 = 5 != '5' //No es una desigualdad extricta, compara un numero con el contenido dentro de un String, compara diferentes tipos de valores.
+
+console.log(resultado1, resultado2)
+console.log(resultado3, resultado4)
+console.log(resultado5, resultado6)
+console.log(resultado7, resultado8, resultado9)
+
+//Operadores Lógicos
+//Existen 3 operadores Lógicos or ||, and &&, not !
+
+//Or ||
+const resultadoOr = false || true //Evalua el primer valor que retorne toma uno o otro valor y lo vuelve true de lo contrario seria false se utiliza solo con valores true || false. Evalua el primer valor y si es True deviuelve true, el unico momento que Or para que el operador Or sea false es que los dos valores sean False. Busca el primer True. Se pueden encadenar muchos valores dentro de la cadena. Evalua hasta que encuentra True si no devuelve false.
+
+console.log(resultadoOr)
+
+//And &&
+const resultadoAnd = true && false //Funciona igual que el operador Or solo que evalua ambas opciones antes de devolver el resultado si una de las dos es false devuelve false. Busca el primer True y para que sea true solo puede tener valores true. Busca el primer True. Se pueden encadenar muchos valores dentro de la cadena. Si encuentra un solo false devolvera false.
+
+console.log(resultadoAnd)
+
+//Not !
+const resultadoNot = ! false // Tienen una particularidad va a  dar vuelta que al valor que este tiene en caso que sea un boolean, si se evalue true dara False y si se evalua false dara True
+console.log(resultadoNot)
 
 
+const resultadoOr2 = false || false || 'Hola' || 'Mundo' // Evalua hasta el primer elemento que evalua en true, todos los tipos de datos evaluan en true a esepción de cero. No se puede realizar en el operador de and
+console.log(resultadoOr2)
 
 
 
