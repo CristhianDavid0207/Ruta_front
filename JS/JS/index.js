@@ -250,3 +250,20 @@ for (let j = 0; j < numeros.length; j++) { //Tenemos que indicar que j debe ser 
     console.log(numeros[j]) //Nos imprime todos los elementos dentro de nuestra array
 }
 
+//FUNCIONES
+// En Js se escriben de dos formas con la palabra reservada fuction seguido del nombre  luego parentesis donde van los argumentos y luego las llaves. Debemos identar de manera correcta nuestro código es demasiado importante.
+
+function iterar (arg1) { //una función recibe los argumentos que permiten cambiar el contenido de manera dinamica de lo que este adentro 
+    for (let j = 0; j < arg1.length; j++) {
+        console.log(arg1[j])
+    }
+}
+
+const numeros2 = [1, 2, 'Hola', 4, 5]
+const nombres = ['Pedro', 'Juan', 'Cristhian', 'David', 'Emmanuel']
+
+iterar (numeros)
+iterar (nombres)
+
+
+
